@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header" class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="header__nav">
+                            <div class="navbar-wrapper">
+                                <a href="#!" class="header__logo">Easy</a>
+
+                                <ul class="header__list">
+                                    <li class="header__item"><a href="#!" class="header__link">Home</a></li>
+                                    <li class="header__item"><a href="#!" class="header__link">Dropdown</a></li>
+                                    <li class="header__item"><a href="#!" class="header__link">Inner Page</a></li>
+                                    <li class="header__item"><a href="#!" class="header__link">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <a href="#!" class="header__btn">Free Templates</a>
+
+                            <div class="header__burger">
+                                <div class="header__burger-name">Menu</div>
+
+                                <div class="header__burger-bar">
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="main" class="main">
+
+            <!-- ------------ Intro ------------ -->
+            <section id="intro" class="intro">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between intro-row">
+                        <div class="col-lg-5 col-md-12 col-sm-12">
+                            <div class="intro__content mb-5">
+                                <h1 class="intro__title" data-aos="fade-up" data-aos-delay="0">Get Paid Easily without
+                                    Hassle</h1>
+                                <div class="intro__subtitle" data-aos="fade-up" data-aos-delay="100">Far far away,
+                                    behind the word mountains, far from the
+                                    countries Vokalia and Consonantia, there live the blind texts. Separated they live.
+                                </div>
+
+                                <form class="intro__form d-flex" data-aos="fade-up" data-aos-delay="200">
+                                    <input type="text" class="intro__input form-control"
+                                        placeholder="Enter email address">
+                                    <input type="submit" class="intro__btn" value="Sign up">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-up" data-aos-delay="300">
+                            <div class="intro__img">
+                                <img src="https://preview.colorlib.com/theme/easy/images/xhero_img.png.pagespeed.ic.DEbE9QfN2U.webp"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro__bottom"></div>
+            </section>
+            <!-- ------------ Intro ------------ -->
+
+            <section id="brands" class="brands">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 brands__img" data-aos="fade-up" data-aos-delay="0">
+                            <img src="data:image/webp;base64,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"
+                                alt="">
+                        </div>
+                        <div class="col-3 brands__img" data-aos="fade-up" data-aos-delay="100">
+                            <img src="data:image/webp;base64,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"
+                                alt="">
+                        </div>
+                        <div class="col-3 brands__img" data-aos="fade-up" data-aos-delay="200">
+                            <img src="data:image/webp;base64,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"
+                                alt="">
+                        </div>
+                        <div class="col-3 brands__img" data-aos="fade-up" data-aos-delay="300">
+                            <img src="data:image/webp;base64,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"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------------ features ------------ -->
+            <section id="features" class="features">
+                <div class="container">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="0">
+                            <div class="features__title sectionTitle">AWESOME FEATURES</div>
+                            <h2 class="features__subtitle sectionSubtitle">Cool Features</h2>
+                            <div class="features__desc section__desc">Far far away, behind the word mountains, far from
+                                the countries
+                                Vokalia and Consonantia</div>
+                        </div>
+                    </div>
+
+                    <div class="row gutter-v1">
+                        <div class="col-lg-4 col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="0">
+                            <div class="feature">
+                                <div class="feature__img">
+                                    <img class="img-fluid"
+                                        src="https://preview.colorlib.com/theme/easy/images/flaticon/svg/002-coins.svg"
+                                        alt="">
+                                </div>
+                                <h3>Cash Collection</h3>
+                                <p>Manage your invoces from creation to payment. With Upflow you'll collect 100% of.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature">
+                                <div class="feature__img">
+                                    <img class="img-fluid"
+                                        src="https://preview.colorlib.com/theme/easy/images/flaticon/svg/001-stats.svg"
+                                        alt="">
+                                </div>
+                                <h3>Cash Collection</h3>
+                                <p>Manage your invoces from creation to payment. With Upflow you'll collect 100% of.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="200">
+                            <div class="feature">
+                                <div class="feature__img">
+                                    <img class="img-fluid"
+                                        src="https://preview.colorlib.com/theme/easy/images/flaticon/svg/006-garage.svg"
+                                        alt="">
+                                </div>
+                                <h3>Cash Collection</h3>
+                                <p>Manage your invoces from creation to payment. With Upflow you'll collect 100% of.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="0">
+                            <div class="feature">
+                                <div class="feature__img">
+                                    <img class="img-fluid"
+                                        src="https://preview.colorlib.com/theme/easy/images/flaticon/svg/004-notebook.svg"
+                                        alt="">
+                                </div>
+                                <h3>Cash Collection</h3>
+                                <p>Manage your invoces from creation to payment. With Upflow you'll collect 100% of.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature">
+                                <div class="feature__img">
+                                    <img class="img-fluid"
+                                        src="https://preview.colorlib.com/theme/easy/images/flaticon/svg/003-gold-ingots.svg"
+                                        alt="">
+                                </div>
+                                <h3>Cash Collection</h3>
+                                <p>Manage your invoces from creation to payment. With Upflow you'll collect 100% of.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center text-md-left" data-aos="fade-up" data-aos-delay="200">
+                            <div class="feature">
+                                <div class="feature__img">
+                                    <img class="img-fluid"
+                                        src="https://preview.colorlib.com/theme/easy/images/flaticon/svg/005-brochure.svg"
+                                        alt="">
+                                </div>
+                                <h3>Cash Collection</h3>
+                                <p>Manage your invoces from creation to payment. With Upflow you'll collect 100% of.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ------------ features ------------ -->
+
+            <!-- ------------ joinNow ------------ -->
+            <section id="joinNow" class="joinNow">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="0">
+                            <div class="joinNow__title sectionTitle">JOIN NOW</div>
+                            <h2 class="joinNow__subtitle sectionSubtitle mb-4">Join More Than 90,000+ Amazing People
+                                Loves Our Product</h2>
+                            <div class="joinNow__desc section__desc mb-4">Far far away, behind the word mountains, far
+                                from the
+                                countries Vokalia and Consonantia, there live the blind texts.</div>
+                            <a href="#!" class="joinNow__button button">Product Tour</a>
+                        </div>
+
+                        <div class="col-lg-7 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="joinNow__comments">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div class="item__profile-info d-flex align-items-center mb-4">
+                                            <div class="item__profile-photo mr-3">
+                                                <img src="https://preview.colorlib.com/theme/easy/images/xperson_4.jpg.pagespeed.ic.QBmniJybS-.webp"
+                                                    alt="">
+                                            </div>
+                                            <div class="item__profile-title">
+                                                <div class="item__profile-name">Kaila Woodland</div>
+                                                <span>Owner, Greenland, Inc.</span>
+                                            </div>
+                                        </div>
+
+                                        <blockquote>
+                                            <p class="item__profile-desc">“Far far away, behind the word mountains, far
+                                                from the countries Vokalia and Consonantia, there live the blind texts.
+                                                Separated they live.”
+                                            </p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item__profile-info d-flex align-items-center mb-4">
+                                            <div class="item__profile-photo mr-3">
+                                                <img src="https://preview.colorlib.com/theme/easy/images/xperson_1.jpg.pagespeed.ic.xVOD9vMtws.webp"
+                                                    alt="">
+                                            </div>
+                                            <div class="item__profile-title">
+                                                <div class="item__profile-name">Kaila Woodland</div>
+                                                <span>Owner, Greenland, Inc.</span>
+                                            </div>
+                                        </div>
+
+                                        <blockquote>
+                                            <p class="item__profile-desc">“Far far away, behind the word mountains, far
+                                                from the countries Vokalia and Consonantia, there live the blind texts.
+                                                Separated they live.”
+                                            </p>
+                                        </blockquote>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item__profile-info d-flex align-items-center mb-4">
+                                            <div class="item__profile-photo mr-3">
+                                                <img src="https://preview.colorlib.com/theme/easy/images/xperson_2.jpg.pagespeed.ic.nNeR9J9CNv.webp"
+                                                    alt="">
+                                            </div>
+                                            <div class="item__profile-title">
+                                                <div class="item__profile-name">Kaila Woodland</div>
+                                                <span>Owner, Greenland, Inc.</span>
+                                            </div>
+                                        </div>
+
+                                        <blockquote>
+                                            <p class="item__profile-desc">“Far far away, behind the word mountains, far
+                                                from the countries Vokalia and Consonantia, there live the blind texts.
+                                                Separated they live.”
+                                            </p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ------------ joinNow ------------ -->
+
+            <!-- ------------ lifeChangingApp ------------ -->
+            <section id="lifeChangingApp" class="lifeChangingApp">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-7 order-lg-2 mb-4" data-aos="fade-up" data-aos-delay="0">
+                            <img src="https://preview.colorlib.com/theme/easy/images/undraw_make_it_rain_iwk4.svg"
+                                class="lifeChangingApp__img" alt="">
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="lifeChangingApp__title sectionTitle">LIFE CHANGING APP</div>
+                            <h2 class="lifeChangingApp__subtitle sectionSubtitle mb-4">Far far away, behind the word
+                                mountains</h2>
+                            <div class="lifeChangingApp__desc section__desc mb-4">Far far away, behind the word
+                                mountains, far from the
+                                countries Vokalia and Consonantia, there live the blind texts. Separated they live.
+                            </div>
+                            <a href="#!" class="lifeChangingApp__button button">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ------------ lifeChangingApp ------------ -->
+
+            <!-- ------------ lifeChangingApp ------------ -->
+            <section id="lifeChangingApp" class="lifeChangingApp">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-7 mb-4" data-aos="fade-up" data-aos-delay="0">
+                            <img src="https://preview.colorlib.com/theme/easy/images/undraw_wallet_aym5.svg"
+                                class="lifeChangingApp__img" alt="">
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="lifeChangingApp__title sectionTitle">LIFE CHANGING APP</div>
+                            <h2 class="lifeChangingApp__subtitle sectionSubtitle mb-4">Far far away, behind the word
+                                mountains</h2>
+                            <div class="lifeChangingApp__desc section__desc mb-4">Far far away, behind the word
+                                mountains, far from the
+                                countries Vokalia and Consonantia, there live the blind texts. Separated they live.
+                            </div>
+                            <a href="#!" class="lifeChangingApp__button button">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ------------ lifeChangingApp ------------ -->
+
+            <!-- ------------ pricing-section ------------ -->
+            <section id="pricing-section" class="pricing-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mb-5 text-center" data-aos="fade-up" data-aos-delay="0">
+                            <div class="sectionTitle">PRICING FOR EVERYONE</div>
+                            <h2 class="sectionSubtitle mb-3">Our Pricing</h2>
+                            <div class="switch d-inline-flex align-items-center">
+                                <div class="period">Monthly</div>
+                                <a href="#" class="period-toggle js-period-toggle"></a>
+                                <div class="period">
+                                    <span class="mr-2">Yearly</span>
+                                    <span class="save-percent">Save 25%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="0">
+                            <div class="pricing">
+                                <h3 class="pricing__title">Personal</h3>
+                                <p class="pricing__desc">Far far away, behind the word mountains</p>
+
+                                <div class="period-change mb-4 d-block">
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <div class="pricing__amount">
+                                                <div>$29</div>
+                                                <div>$299</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-inline-flex align-items-center text-center period-wrap">
+                                        <div class="d-inline-block mr-1">Per</div>
+                                        <div class="d-block text-left period">
+                                            <div class="pricing__date">
+                                                <div>Month</div>
+                                                <div>Year</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="pricing__list">
+                                    <li class="d-flex">
+                                        <i class="bi bi-check-circle-fill mr-2"></i>
+                                        <span>Far far away, behind the word mountains</span>
+                                    </li>
+                                    <li class="d-flex">
+                                        <i class="bi bi-check-circle-fill mr-2"></i>
+                                        <span>Far far away, behind the word mountains</span>
+                                    </li>
+                                </ul>
+
+                                <a href="#!" class="pricing__button button">Get Started</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="100">
+                            <div class="pricing bg-white">
+                                <h3 class="pricing__title">Enterprise</h3>
+                                <p class="pricing__desc">Far far away, behind the word mountains</p>
+
+                                <div class="period-change mb-4 d-block">
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <div class="pricing__amount">
+                                                <div>$49</div>
+                                                <div>$599</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-inline-flex align-items-center text-center period-wrap">
+                                        <div class="d-inline-block mr-1">Per</div>
+                                        <div class="d-block text-left period">
+                                            <div class="pricing__date">
+                                                <div>Month</div>
+                                                <div>Year</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="pricing__list">
+                                    <li class="d-flex">
+                                        <i class="bi bi-check-circle-fill mr-2"></i>
+                                        <span>Far far away, behind the word mountains</span>
+                                    </li>
+                                    <li class="d-flex">
+                                        <i class="bi bi-check-circle-fill mr-2"></i>
+                                        <span>Far far away, behind the word mountains</span>
+                                    </li>
+                                </ul>
+
+                                <a href="#!" class="pricing__button button">Get Started</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
+                            <div class="pricing">
+                                <h3 class="pricing__title">Enterprise</h3>
+                                <p class="pricing__desc">Far far away, behind the word mountains</p>
+
+                                <div class="period-change mb-4 d-block">
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <div class="pricing__amount">
+                                                <div>$99</div>
+                                                <div>$1,999</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-inline-flex align-items-center text-center period-wrap">
+                                        <div class="d-inline-block mr-1">Per</div>
+                                        <div class="d-block text-left period">
+                                            <div class="pricing__date">
+                                                <div>Month</div>
+                                                <div>Year</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="pricing__list">
+                                    <li class="d-flex">
+                                        <i class="bi bi-check-circle-fill mr-2"></i>
+                                        <span>Far far away, behind the word mountains</span>
+                                    </li>
+                                    <li class="d-flex">
+                                        <i class="bi bi-check-circle-fill mr-2"></i>
+                                        <span>Far far away, behind the word mountains</span>
+                                    </li>
+                                </ul>
+
+                                <a href="#!" class="pricing__button button">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ------------ pricing-section ------------ -->
+
+            <!-- ------------ blog ------------ -->
+            <section class="blog" id="blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mb-5 text-center" data-aos="fade-up" data-aos-delay="0">
+                            <div class="blog__title sectionTitle">BLOG</div>
+                            <h2 class="blog__subtitle sectionSubtitle mb-3">Blog Posts</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-delay="100">
+                            <div class="post">
+                                <a href="#!">
+                                    <img class="post__img"
+                                        src="https://preview.colorlib.com/theme/easy/images/xgal_1.jpg.pagespeed.ic.V12iBwOGIs.webp"
+                                        alt="">
+                                </a>
+
+                                <div class="post__body">
+                                    <span class="post__date">May 14, 2020</span>
+                                    <a class="post__title" href="#!">Far far away, behind the word mountains</a>
+                                    <p class="post__desc">Vokalia and Consonantia, there live the blind texts. Separated
+                                        they live.</p>
+                                    <a href="#!" class="post__button d-flex align-items-center justify-content-end">
+                                        <span class="post__read-more">Read More</span>
+                                        <span class="post__button-icon">
+                                            <i class="bi bi-arrow-right-short"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-delay="200">
+                            <div class="post">
+                                <a href="#!">
+                                    <img class="post__img"
+                                        src="https://preview.colorlib.com/theme/easy/images/xgal_2.jpg.pagespeed.ic.mDALWHAaWm.webp"
+                                        alt="">
+                                </a>
+
+                                <div class="post__body">
+                                    <span class="post__date">May 14, 2020</span>
+                                    <a class="post__title" href="#!">Far far away, behind the word mountains</a>
+                                    <p class="post__desc">Vokalia and Consonantia, there live the blind texts. Separated
+                                        they live.</p>
+                                    <a href="#!" class="post__button d-flex align-items-center justify-content-end">
+                                        <span class="post__read-more">Read More</span>
+                                        <span class="post__button-icon">
+                                            <i class="bi bi-arrow-right-short"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-delay="300">
+                            <div class="post">
+                                <a href="#!">
+                                    <img class="post__img"
+                                        src="https://preview.colorlib.com/theme/easy/images/xgal_3.jpg.pagespeed.ic.GnLGzx0EBQ.webp"
+                                        alt="">
+                                </a>
+
+                                <div class="post__body">
+                                    <span class="post__date">May 14, 2020</span>
+                                    <a class="post__title" href="#!">Far far away, behind the word mountains</a>
+                                    <p class="post__desc">Vokalia and Consonantia, there live the blind texts. Separated
+                                        they live.</p>
+                                    <a href="#!" class="post__button d-flex align-items-center justify-content-end">
+                                        <span class="post__read-more">Read More</span>
+                                        <span class="post__button-icon">
+                                            <i class="bi bi-arrow-right-short"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-delay="400">
+                            <div class="post">
+                                <a href="#!">
+                                    <img class="post__img"
+                                        src="https://preview.colorlib.com/theme/easy/images/xgal_4.jpg.pagespeed.ic.iYqeJnU_mN.webp"
+                                        alt="">
+                                </a>
+
+                                <div class="post__body">
+                                    <span class="post__date">May 14, 2020</span>
+                                    <a class="post__title" href="#!">Far far away, behind the word mountains</a>
+                                    <p class="post__desc">Vokalia and Consonantia, there live the blind texts. Separated
+                                        they live.</p>
+                                    <a href="#!" class="post__button d-flex align-items-center justify-content-end">
+                                        <span class="post__read-more">Read More</span>
+                                        <span class="post__button-icon">
+                                            <i class="bi bi-arrow-right-short"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ------------ blog ------------ -->
+
+        </main>
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4">
+                        <h3 class="footer__title">About</h3>
+                        <p class="about-desc">Far far away, behind the word mountains, far from the countries Vokalia
+                            and Consonantia, there live the blind texts. Separated they live.</p>
+                        <nav class="footer-menu">
+                            <h3>Connect with us</h3>
+                            <ul class="connect-list list-unstyled">
+                                <li class="conntect-item">
+                                    <a href="#!" class="connect-link"><i class="bi bi-facebook"></i></a>
+                                </li>
+                                <li class="conntect-item">
+                                    <a href="#!" class="connect-link"><i class="bi bi-twitter"></i></a>
+                                </li>
+                                <li class="conntect-item">
+                                    <a href="#!" class="connect-link"><i class="bi bi-instagram"></i></a>
+                                </li>
+                                <li class="conntect-item">
+                                    <a href="#!" class="connect-link"><i class="bi bi-dribbble"></i></a>
+                                </li>
+                                <li class="conntect-item">
+                                    <a href="#!" class="connect-link"><i class="bi bi-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer__title">Navigation</div>
+
+                        <nav class="footer-menu">
+                            <div class="row">
+                                <div class="col-6 col-md-4 col-sm-6">
+                                    <ul class="navigation--list list-unstyled">
+                                        <li class="navigation--item">
+                                            <a href="#!" class="navigation--link">Home</a>
+                                        </li>
+                                        <li class="navigation--item">
+                                            <a href="#!" class="navigation--link">Services</a>
+                                        </li>
+                                        <li class="navigation--item">
+                                            <a href="#!" class="navigation--link">Work</a>
+                                        </li>
+                                        <li class="navigation--item">
+                                            <a href="#!" class="navigation--link">Process</a>
+                                        </li>
+                                        <li class="navigation--item">
+                                            <a href="#!" class="navigation--link">About Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-4 col-sm-6">
+                                    <ul class="navigation--list list-unstyled">
+                                        <li class="navigation--item">
+                                            <a href="#!" class="navigation--link">Press</a>
+                                        </li>
+                                        <li class="navigation--item">
+                                            <a href="#!" class="navigation--link">Blog</a>
+                                        </li>
+                                        <li class="navigation--item">
+                                            <a href="#!" class="navigation--link">Contact</a>
+                                        </li>
+                                        <li class="navigation--item">
+                                            <a href="#!" class="navigation--link">Support</a>
+                                        </li>
+                                        <li class="navigation--item">
+                                            <a href="#!" class="navigation--link">Privacy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-4 col-sm-6">
+                                    <ul class="navigation--list list-unstyled">
+                                        <li class="navigation--item">
+                                            <a href="#!" class="navigation--link">Privac</a>
+                                        </li>
+                                        <li class="navigation--item">
+                                            <a href="#!" class="navigation--link">FAQ</a>
+                                        </li>
+                                        <li class="navigation--item">
+                                            <a href="#!" class="navigation--link">Careers</a>
+                                        </li>
+                                        <li class="navigation--item">
+                                            <a href="#!" class="navigation--link">Process</a>
+                                        </li>
+                                        <li class="navigation--item">
+                                            <a href="#!" class="navigation--link">About Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <p class="copyright text-center">
+                            Copyright © <span id="copyright_date"></span> All rights reserved
+                            | This template is made with
+                            <i class="bi bi-heart-fill"></i>
+                            by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </div>
+</body>
+
+</html>
