@@ -159,6 +159,11 @@ body {
     min-height: 650px;
 }
 
+.intro__content {
+    position: relative;
+    z-index: 10;
+}
+
 .intro__title {
     color: #fff;
     font-weight: 700;
